@@ -5,11 +5,14 @@
   "license": "MIT",
   "scripts": {
     "lint:fix": "eslint --fix src --ext ts,tsx",
-    "test": "jest"
+    "test": "jest",
+    "commit": "cz"
   },
   "devDependencies": {
     "@types/jest": "^26.0.21",
     "@types/node": "^14.14.35",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.4",
     "ts-node": "^9.1.1",
@@ -17,6 +20,13 @@
   },
   "dependencies": {
     "pg": "^8.5.1",
-    "typeorm": "^0.2.31"
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.7.0",
+    "typeorm": "^0.3.16"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
